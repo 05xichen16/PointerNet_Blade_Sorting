@@ -26,14 +26,14 @@ def main():
     parser.add_argument('--train_size', default=10000, type=int, help='Training data size')
     parser.add_argument('--val_size', default=10000, type=int, help='Validation data size')
     parser.add_argument('--test_size', default=100, type=int, help='Test data size')
-    parser.add_argument('--batch_size', default=10, type=int, help='Batch size')
+    parser.add_argument('--batch_size', default=64, type=int, help='Batch size')
     # Train
     parser.add_argument('--nof_epoch', default=10, type=int, help='Number of epochs')
     parser.add_argument('--lr', type=float, default=0.0001, help='Learning rate')
     # GPU
     parser.add_argument('--gpu', default=False, action='store_true', help='Enable gpu')
     # TSP
-    parser.add_argument('--nof_points', type=int, default=5, help='Number of points in TSP')
+    parser.add_argument('--nof_points', type=int, default=40, help='Number of points in TSP')
     # Network
     parser.add_argument('--embedding_size', type=int, default=128, help='Embedding size')
     parser.add_argument('--hiddens', type=int, default=512, help='Number of hidden units')
